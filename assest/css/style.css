@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assest/images/background\ image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    background-color: aliceblue;
+    width: 40%;
+    height: auto;
+    border: 3px double black;
+    padding: 2rem;
+}
+
+.heading{
+    text-transform: uppercase;
+    position: relative;
+    bottom: 2rem;
+    font-size: 3rem;
+    font-family: lucida handwriting;
+}
+
+label{
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+}
+
+input[type="number"]{
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    outline: none;
+    padding: 1rem;
+}
+
+input[type="number"]:focus-visible{
+    border: 3px dotted blue;
+}
+
+input[type="button"]{
+    width: 50%;
+    height: auto;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: lightskyblue;
+    cursor: pointer;
+    margin: 1rem 0 1rem 0;
+}
+
+input[type="button"]:hover{
+    font-size: 1.5rem;
+    background-color: lightcyan;
+}
+
+#display{
+    width: 40%;
+    height: auto;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border: 3px double black;
+    font-family: cursive;
+    margin-top: 0.5rem;
+}
+
+                                       /* media queries */
+
+                                       /* tablets */
+
+@media only screen and (max-width: 768px){
+    .main {
+      width: 90%;
+      margin-top: 10rem;
+      margin-left: 2rem;
+    }
+    #display {
+      width: 90%;
+      margin-left: 2rem;
+    }
+}
+
+                                              /* laptop */
+
+@media only screen and (max-width: 1200px){
+    .main{
+        width: 50%;
+    }
+    #display{
+        width: 50%;
+    }
+}
+
+                                                /* mobile */
+
+@media only screen and (max-width: 480px) {
+    .main {
+        width: 100%;
+    }
+    #display {
+        width: 100%;
+    }
+}
